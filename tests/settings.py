@@ -23,15 +23,12 @@ EXTRA_SETTINGS_TEST_FALLBACK_VALUE = "fallback-value"
 
 # Application definition
 INSTALLED_APPS = [
-    "extra_settings",
-]
-
-INSTALLED_APPS += [
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
     "django.contrib.messages",
     "django.contrib.sessions",
+    "extra_settings",
 ]
 
 MIDDLEWARE = [

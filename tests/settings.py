@@ -1,5 +1,7 @@
 import os
 
+from extra_settings.choices import SettingType
+
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 SECRET_KEY = "django-extra-settings"
@@ -10,7 +12,7 @@ ALLOWED_HOSTS = ["*"]
 EXTRA_SETTINGS_DEFAULTS = [
     {
         "name": "TEST_DEFAULT_URL",
-        "type": "url",
+        "type": SettingType.URL,
         "value": "https://github.com/fabiocaccamo/django-extra-settings",
     },
 ]
